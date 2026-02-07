@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>ALBERTO <span>GALLARDO</span></h1>
+            <ul id="menu">
+                <li><a href="#sobre-mi" data-es="Sobre mí" data-en="About me">Sobre mí</a></li>
+                <li><a href="#experiencia" data-es="Experiencia" data-en="Experience">Experiencia</a></li>
+                <li><a href="#formacion" data-es="Formación" data-en="Education">Formación</a></li>
+                <li><a href="#proyectos" data-es="Proyectos" data-en="Projects">Proyectos</a></li>
+                <li><a href="#tecnologias" data-es="Tecnologías" data-en="Technologies">Tecnologías</a></li>
+            </ul>
+            <div class="nav-right">
+                <div class="language-selector">
+                    <button id="langBtn" class="lang-btn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                        <span id="currentLang">ESP</span>
+                    </button>
+                    <div id="langMenu" class="lang-menu">
+                        <button onclick="changeLanguage('es')" class="lang-option">ESP</button>
+                        <button onclick="changeLanguage('en')" class="lang-option">ENG</button>
+                    </div>
+                </div>
+                <div class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="greeting" data-es="Hola, soy" data-en="Hello, I'm">Hola, soy</p>
+                <h1>Alberto <span>Gallardo</span></h1>
+                <h2 data-es="Desarrollador Web Full Stack" data-en="Full Stack Web Developer">Desarrollador Web Full Stack</h2>
+                <p class="tagline" data-es="Creando aplicaciones web robustas y escalables con tecnologías modernas" data-en="Creating robust and scalable web applications with modern technologies">Creando aplicaciones web robustas y escalables con tecnologías modernas</p>
+                <div class="social-links">
+                    <a href="https://es.linkedin.com/in/alberto-gallardo-morales-036005253" target="_blank" class="cta-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                        LinkedIn
+                    </a>
+                    <a href="https://wa.me/34678344983" target="_blank" class="cta-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                        </svg>
+                        WhatsApp
+                    </a>
+                    <a href="mailto:alber.gm.98@gmail.com" class="cta-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        Email
+                    </a>
+                    <a href="https://github.com/albergm98" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="me.webp" alt="Alberto Gallardo" class="profile-img">
+                    <div class="image-bg"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre-mi">
+        <div class="about-container">
+            <div class="about-text">
+                <h2 data-es="Sobre mí" data-en="About me">Sobre mí</h2>
+                <p data-es="Soy un desarrollador Full Stack apasionado por crear aplicaciones web modernas y eficientes. Me especializo en el desarrollo tanto del frontend como del backend, utilizando las últimas tecnologías para construir soluciones escalables y de alto rendimiento." data-en="I am a Full Stack developer passionate about creating modern and efficient web applications. I specialize in both frontend and backend development, using the latest technologies to build scalable and high-performance solutions.">Soy un desarrollador Full Stack apasionado por crear aplicaciones web modernas y eficientes. Me
+                    especializo en el desarrollo tanto del frontend como del backend, utilizando las últimas tecnologías
+                    para construir soluciones escalables y de alto rendimiento.</p>
+                <p data-es="Mi enfoque se centra en escribir código limpio, mantenible y siguiendo las mejores prácticas de la industria. Disfruto enfrentando desafíos técnicos y aprendiendo nuevas tecnologías constantemente." data-en="My approach focuses on writing clean, maintainable code following industry best practices. I enjoy facing technical challenges and constantly learning new technologies.">Mi enfoque se centra en escribir código limpio, mantenible y siguiendo las mejores prácticas de la
+                    industria. Disfruto enfrentando desafíos técnicos y aprendiendo nuevas tecnologías constantemente.
+                </p>
+                <div class="skills-highlight">
+                    <div class="skill-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                        <span data-es="Desarrollo Frontend" data-en="Frontend Development">Desarrollo Frontend</span>
+                    </div>
+                    <div class="skill-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                        <span data-es="Desarrollo Backend" data-en="Backend Development">Desarrollo Backend</span>
+                    </div>
+                    <div class="skill-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                        </svg>
+                        <span data-es="Diseño de Bases de Datos" data-en="Database Design">Diseño de Bases de Datos</span>
+                    </div>
+                    <div class="skill-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                            </path>
+                        </svg>
+                        <span data-es="Desarrollo de APIs" data-en="API Development">Desarrollo de APIs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiencia">
+        <div class="experience-container">
+            <div class="section-header">
+                <h2 data-es="Experiencia Laboral" data-en="Work Experience">Experiencia Laboral</h2>
+                <p data-es="Mi trayectoria profesional en desarrollo web" data-en="My professional career in web development">Mi trayectoria profesional en desarrollo web</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <img src="logo-dc.jpg" alt="Dentsu Creative Spain" class="company-logo">
+                        <span class="timeline-date">Enero 2024 - Actualidad</span>
+                        <h3>Desarrollador Web - FullStack</h3>
+                        <h4>Dentsu Creative Spain</h4>
+                        <p>Desarrollo y mantenimiento de aplicaciones web para clientes internacionales. Implementación
+                            de soluciones Full Stack y optimización de rendimiento.</p>
+                        <div class="timeline-tags">
+                            <span class="frontend">HTML</span>
+                            <span class="frontend">CSS</span>
+                            <span class="frontend">JavaScript</span>
+                            <span class="frontend">TypeScript</span>
+                            <span class="backend">PHP</span>
+                            <span class="backend">Codeigniter 3</span>
+                            <span class="backend">Laravel</span>
+                            <span class="backend">Wordpress</span>
+                            <span class="backend">MySQL</span>
+                            <span class="tools">AWS</span>
+                            <span class="tools">Git</span>
+                            <span class="tools">Postman</span>     
+                            <span class="tools">Bitbucket</span>
+                            <span class="tools">Jira</span>
+                            <span class="tools">Office 365</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content company-group">
+                        <img src="logo-kumobe.png" alt="Dentsu Creative Spain" class="company-logo">
+                        <p class="company-duration">10 meses</p>
+                        <h4>Kumobe</h4>
+                        <div class="position">
+                            <span class="timeline-date">Agosto 2023 - Enero 2024</span>
+                            <h3>Desarrollador Full Stack</h3>
+                            <p>Desarrollo de aplicaciones web escalables y mantenimiento de sistemas legacy.
+                                Implementación de nuevas funcionalidades y mejoras de rendimiento.</p>
+                            <div class="timeline-tags">
+                                <span class="frontend">React</span>
+                                <span class="backend">Codeigniter 3</span>
+                                <span class="backend">PowerBuilder</span>
+                                <span class="tools">Git</span>
+                                <span class="tools">Bitbucket</span>
+
+                            </div>
+                        </div>
+
+                        <div class="position">
+                            <span class="timeline-date">Abril 2023 - Agosto 2023</span>
+                            <h3>Prácticas - Desarrollador Frontend</h3>
+                            <p>Primeras prácticas profesionales en desarrollo web. Aprendizaje de tecnologías y
+                                metodologías de trabajo en equipo.</p>
+                            <div class="timeline-tags">
+                                <span class="backend">Codeigniter 3</span>
+                                <span class="backend">PowerBuilder</span>
+                                <span class="tools">Git</span>
+                                <span class="tools">Bitbucket</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="formacion">
+        <div class="experience-container">
+            <div class="section-header">
+                <h2 data-es="Formación Académica" data-en="Academic Education">Formación Académica</h2>
+                <p data-es="Estudios y certificaciones" data-en="Studies and certifications">Estudios y certificaciones</p>
+            </div>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                        </svg>
+                    </div>
+                    <h3>Desarrollo de Aplicaciones Web</h3>
+                    <h4>Ciclo Formativo de Grado Superior</h4>
+                    <p class="education-date">2021 - 2023</p>
+                    <p>Formación especializada en desarrollo web Full Stack, bases de datos, programación orientada a objetos y despliegue de aplicaciones.</p>
+                </div>
+                <div class="education-card">
+                    <div class="education-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                        </svg>
+                    </div>
+                    <h3>Gestión Administrativa</h3>
+                    <h4>Ciclo Formativo de Grado Medio</h4>
+                    <p class="education-date">2019 - 2021</p>
+                    <p>Formación en gestión empresarial, administración de recursos, contabilidad y atención al cliente.</p>
+                </div>
+            </div>
+            
+            <div class="section-header" style="margin-top: 4rem;">
+                <h2 data-es="Certificaciones" data-en="Certifications">Certificaciones</h2>
+                <p data-es="Cursos y formación complementaria" data-en="Courses and complementary training">Cursos y formación complementaria</p>
+            </div>
+            
+            <div class="cert-platform">
+                <div class="cert-header" onclick="toggleCerts()">
+                    <h3>OpenWebinars</h3>
+                    <span class="cert-count" data-es="9 certificaciones" data-en="9 certifications">9 certificaciones</span>
+                </div>
+                <div class="cert-list" id="certList">
+                    <div class="cert-item">
+                        <div class="cert-info">
+                            <h4>Angular 11 para principiantes</h4>
+                            <p>Febrero 2023</p>
+                        </div>
+                        <a href="https://openwebinars.net/cert/btpN" target="_blank" class="cert-link">Ver</a>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-info">
+                            <h4>PHP básico online</h4>
+                            <p>Enero 2023</p>
+                        </div>
+                        <a href="https://openwebinars.net/cert/GuOV" target="_blank" class="cert-link">Ver</a>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-info">
+                            <h4>Manipulación del DOM desde JavaScript</h4>
+                            <p>Enero 2023</p>
+                        </div>
+                        <a href="https://openwebinars.net/cert/qWdt" target="_blank" class="cert-link">Ver</a>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-info">
+                            <h4>Arquitectura Web para SEO</h4>
+                            <p>Diciembre 2022</p>
+                        </div>
+                        <a href="https://openwebinars.net/cert/jYwK3" target="_blank" class="cert-link">Ver</a>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-info">
+                            <h4>Maquetación web con CSS</h4>
+                            <p>Octubre 2022</p>
+                        </div>
+                        <a href="https://openwebinars.net/cert/qBJ7L" target="_blank" class="cert-link">Ver</a>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-info">
+                            <h4>JavaScript para principiantes</h4>
+                            <p>Octubre 2022</p>
+                        </div>
+                        <a href="https://openwebinars.net/cert/d9pNb" target="_blank" class="cert-link">Ver</a>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-info">
+                            <h4>PHP para principiantes</h4>
+                            <p>Octubre 2022</p>
+                        </div>
+                        <a href="https://openwebinars.net/cert/Gleqw" target="_blank" class="cert-link">Ver</a>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-info">
+                            <h4>HTML5 y CSS3</h4>
+                            <p>Octubre 2022</p>
+                        </div>
+                        <a href="https://openwebinars.net/cert/5w6Nz" target="_blank" class="cert-link">Ver</a>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-info">
+                            <h4>JavaScript intermedio</h4>
+                            <p>Octubre 2022</p>
+                        </div>
+                        <a href="https://openwebinars.net/cert/YZ9Rk" target="_blank" class="cert-link">Ver</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2026 Alberto Gallardo. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const menu = document.getElementById('menu');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            menu.classList.toggle('active');
+        });
+
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                menu.classList.remove('active');
+            });
+        });
+        
+        function toggleCerts() {
+            document.getElementById('certList').classList.toggle('active');
+        }
+
+        // Language selector
+        const langBtn = document.getElementById('langBtn');
+        const langMenu = document.getElementById('langMenu');
+        let currentLanguage = 'es';
+
+        langBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            langMenu.classList.toggle('active');
+        });
+
+        document.addEventListener('click', () => {
+            langMenu.classList.remove('active');
+        });
+
+        function changeLanguage(lang) {
+            currentLanguage = lang;
+            document.getElementById('currentLang').textContent = lang === 'es' ? 'ESP' : 'ENG';
+            
+            document.querySelectorAll('[data-es]').forEach(element => {
+                const text = lang === 'es' ? element.getAttribute('data-es') : element.getAttribute('data-en');
+                element.textContent = text;
+            });
+            
+            langMenu.classList.remove('active');
+        }
+
+        function openPreview(url) {
+            document.getElementById('previewFrame').src = url;
+            document.getElementById('previewModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePreview() {
+            document.getElementById('previewModal').classList.remove('active');
+            document.getElementById('previewFrame').src = '';
+            document.body.style.overflow = '';
+        }
+
+        document.getElementById('previewModal').addEventListener('click', (e) => {
+            if (e.target.id === 'previewModal') closePreview();
+        });
+    </script>
+</body>
+
+</html>
