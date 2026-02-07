@@ -1,8 +1,0 @@
-[phases.setup]
-nixPkgs = ["nginx"]
-
-[phases.build]
-cmds = ["mkdir -p /usr/share/nginx/html", "cp -r * /usr/share/nginx/html/"]
-
-[start]
-cmd = "nginx -g 'daemon off;'"
