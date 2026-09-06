@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 440" fill="none" role="img" aria-labelledby="heroSvgTitle">
+  <title id="heroSvgTitle">Verified collectors connected by a secure channel with a shield on the trade</title>
+  <defs>
+    <linearGradient id="hx-royal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#153a8f"/>
+      <stop offset="55%" stop-color="#1e4a9e"/>
+      <stop offset="100%" stop-color="#0891b2"/>
+    </linearGradient>
+    <linearGradient id="hx-card" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#eef2f7"/>
+    </linearGradient>
+    <linearGradient id="hx-holo" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#4fd1ff" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#4fd1ff" stop-opacity="0.45"/>
+      <stop offset="55%" stop-color="#7ae8ff" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#4fd1ff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="hx-ambient" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#4fd1ff" stop-opacity="0.22"/>
+      <stop offset="70%" stop-color="#153a8f" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#4fd1ff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="hx-spot" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#f4f7fb" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="hx-shadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#153a8f" flood-opacity="0.14"/>
+    </filter>
+    <linearGradient id="hx-secure-path" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#94a3b8" stop-opacity="0.5"/>
+      <stop offset="45%" stop-color="#153a8f" stop-opacity="0.85"/>
+      <stop offset="55%" stop-color="#0891b2" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#94a3b8" stop-opacity="0.5"/>
+    </linearGradient>
+    <filter id="hx-icon-pop" x="-35%" y="-35%" width="170%" height="170%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#153a8f" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient -->
+  <ellipse cx="280" cy="228" rx="248" ry="168" fill="url(#hx-ambient)"/>
+  <ellipse cx="280" cy="210" rx="180" ry="120" fill="url(#hx-spot)"/>
+
+  <!-- Faint backing cards (depth) -->
+  <g opacity="0.55">
+    <g transform="translate(168 248) rotate(-14)">
+      <rect x="-52" y="-78" width="104" height="156" rx="10" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="1"/>
+    </g>
+    <g transform="translate(392 248) rotate(14)">
+      <rect x="-52" y="-78" width="104" height="156" rx="10" fill="#e8eef6" stroke="#cbd5e1" stroke-width="1"/>
+    </g>
+  </g>
+
+  <!-- Secure channel: dashed outer + solid protected core -->
+  <path
+    d="M 72 232 C 140 232 180 198 280 198 S 420 232 488 232"
+    stroke="#cbd5e1"
+    stroke-width="2.5"
+    stroke-dasharray="6 9"
+    stroke-linecap="round"
+    opacity="0.75"/>
+  <path
+    d="M 72 232 C 140 232 180 198 280 198 S 420 232 488 232"
+    stroke="url(#hx-secure-path)"
+    stroke-width="4"
+    stroke-linecap="round"
+    opacity="0.55"/>
+
+  <!-- Left collector -->
+  <g transform="translate(88 232)">
+    <circle r="34" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <circle cy="-4" r="10" fill="#64748b"/>
+    <path d="M-16 22c0-9 7-16 16-16s16 7 16 16" stroke="#64748b" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <circle cx="22" cy="-18" r="10" fill="#16a34a" stroke="#ffffff" stroke-width="2"/>
+    <path d="M19 -18l2 2 5-6" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+
+  <!-- Right collector -->
+  <g transform="translate(472 232)">
+    <circle r="34" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+    <circle cy="-4" r="10" fill="#64748b"/>
+    <path d="M-16 22c0-9 7-16 16-16s16 7 16 16" stroke="#64748b" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+    <circle cx="-22" cy="-18" r="10" fill="#16a34a" stroke="#ffffff" stroke-width="2"/>
+    <path d="M-25 -18l2 2 5-6" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+
+  <!-- Security shield (only protection motif) -->
+  <g transform="translate(280 248)" opacity="0.98">
+    <path
+      d="M 0 -102 C 48 -86 92 -86 140 -102 L 138 32 C 112 92 56 128 0 146 C -56 128 -112 92 -138 32 L -140 -102 C -92 -86 -48 -86 0 -102 Z"
+      fill="url(#hx-royal)"
+      opacity="0.22"/>
+    <path
+      d="M 0 -92 C 44 -78 84 -78 128 -92 L 126 26 C 102 78 52 112 0 128 C -52 112 -102 78 -126 26 L -128 -92 C -84 -78 -44 -78 0 -92 Z"
+      fill="none"
+      stroke="url(#hx-royal)"
+      stroke-width="2.5"
+      opacity="0.55"/>
+  </g>
+
+  <!-- Main trading card -->
+  <g transform="translate(280 262)" filter="url(#hx-shadow)">
+    <rect x="-76" y="-108" width="152" height="216" rx="16" fill="url(#hx-card)" stroke="#153a8f" stroke-width="2"/>
+    <rect x="-64" y="-96" width="128" height="100" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+    <!-- Holo stripe -->
+    <rect x="-58" y="-52" width="116" height="28" rx="4" fill="url(#hx-holo)"/>
+    <rect x="-52" y="-88" width="104" height="12" rx="3" fill="#e2e8f0"/>
+    <!-- Dark lower bar (card identity strip) -->
+    <rect x="-64" y="8" width="128" height="92" rx="10" fill="#0f172a"/>
+    <rect x="-54" y="22" width="108" height="5" rx="2" fill="#4fd1ff" opacity="0.85"/>
+    <rect x="-54" y="34" width="72" height="4" rx="1" fill="#475569" opacity="0.8"/>
+    <rect x="-54" y="44" width="56" height="4" rx="1" fill="#475569" opacity="0.55"/>
+    <rect x="-54" y="72" width="40" height="16" rx="3" fill="#153a8f" opacity="0.9"/>
+  </g>
+
+  <!-- Center: small security shield on the channel (above card paint order) -->
+  <g transform="translate(280 198)" filter="url(#hx-icon-pop)">
+    <circle r="23" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+    <path
+      d="M 0 -13 L 14 -9.5 L 14 7 Q 14 17 0 25 Q -14 17 -14 7 L -14 -9.5 Z"
+      fill="url(#hx-royal)"/>
+    <path
+      d="M 0 -11 L 11.5 -8.2 L 11.5 6.2 Q 11.5 14.5 0 21.5 Q -11.5 14.5 -11.5 6.2 L -11.5 -8.2 Z"
+      fill="none"
+      stroke="#ffffff"
+      stroke-width="1.25"
+      opacity="0.4"/>
+  </g>
+
+  <!-- Corner accents (subtle tech frame) -->
+  <g stroke="#0891b2" stroke-opacity="0.25" stroke-width="1.5" fill="none">
+    <path d="M40 52h28v28"/>
+    <path d="M520 52h-28v28"/>
+    <path d="M40 388h28v-28"/>
+    <path d="M520 388h-28v-28"/>
+  </g>
+</svg>

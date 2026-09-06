@@ -1,0 +1,107 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --color-tinta: #101010;
+  --color-tinta-suave: #5c5c5c;
+  --color-papel: #f0f0ee;
+  --color-niebla: #e4e4e0;
+  --color-acento: #c8f54a;
+  --color-acento-oscuro: #b4df32;
+  --color-linea: rgb(16 16 16 / 0.12);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
+  }
+
+  body {
+    @apply m-0 min-h-dvh bg-papel font-sans text-base text-tinta antialiased;
+  }
+
+  ::selection {
+    @apply bg-acento text-tinta;
+  }
+
+  a {
+    @apply outline-offset-4 focus-visible:outline-2 focus-visible:outline-acento;
+  }
+}
+
+@layer utilities {
+  .entrada-hero {
+    animation: entrar 0.75s ease-out both;
+  }
+
+  .entrada-hero-retraso {
+    animation: entrar 0.75s ease-out 0.1s both;
+  }
+
+  .entrada-hero-retraso-2 {
+    animation: entrar 0.75s ease-out 0.2s both;
+  }
+
+  .pulso-boton {
+    transition: transform 120ms ease, background-color 160ms ease, color 160ms ease;
+  }
+
+  .pulso-boton:active {
+    transform: scale(0.97);
+  }
+
+  .grano {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.45'/%3E%3C/svg%3E");
+  }
+
+  .cinta-marcas {
+    animation: desfilar-marcas 40s linear infinite;
+    will-change: transform;
+  }
+}
+
+@keyframes entrar {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes desfilar-marcas {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .entrada-hero,
+  .entrada-hero-retraso,
+  .entrada-hero-retraso-2,
+  .cinta-marcas {
+    animation: none;
+  }
+
+  .pulso-boton:active {
+    transform: none;
+  }
+
+  .tarjeta-volteo-cara,
+  .group:hover .tarjeta-volteo-cara,
+  .group:focus-within .tarjeta-volteo-cara {
+    transform: none !important;
+    transition: none;
+  }
+}

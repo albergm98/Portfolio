@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 240" fill="none" role="img" aria-labelledby="ctaTitle">
+  <title id="ctaTitle">Protection shield with beam accent</title>
+  <defs>
+    <linearGradient id="shieldFill" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e0f2fe"/>
+    </linearGradient>
+    <linearGradient id="shieldEdge" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4fd1ff" stop-opacity="0.35"/>
+      <stop offset="40%" stop-color="#22d3ee" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#153a8f" stop-opacity="0.45"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#4fd1ff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#7ae8ff" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#4fd1ff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <g stroke="#0891b2" stroke-opacity="0.15" stroke-width="1">
+    <line x1="40" y1="198" x2="480" y2="198"/>
+    <line x1="100" y1="142" x2="260" y2="198"/>
+    <line x1="420" y1="142" x2="260" y2="198"/>
+    <line x1="120" y1="168" x2="260" y2="210"/>
+    <line x1="400" y1="168" x2="260" y2="210"/>
+  </g>
+  <rect x="60" y="108" width="400" height="3" fill="url(#beam)" rx="1.5"/>
+
+  <path d="M260 30 L332 52 V138 C332 178 298 206 260 218 C222 206 188 178 188 138 V52 Z"
+        fill="url(#shieldFill)" stroke="url(#shieldEdge)" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M260 46 L316 64 V132 C316 164 292 186 260 198 C228 186 204 164 204 132 V64 Z"
+        fill="none" stroke="#0891b2" stroke-opacity="0.22" stroke-width="1" stroke-linejoin="round"/>
+
+  <path d="M88 50l18 30-22 10z" fill="#4fd1ff" fill-opacity="0.2" stroke="#0891b2" stroke-opacity="0.4" stroke-width="1"/>
+  <path d="M432 50l-18 30 22 10z" fill="#4fd1ff" fill-opacity="0.2" stroke="#0891b2" stroke-opacity="0.4" stroke-width="1"/>
+
+  <circle cx="260" cy="74" r="3" fill="#0891b2" fill-opacity="0.55"/>
+</svg>

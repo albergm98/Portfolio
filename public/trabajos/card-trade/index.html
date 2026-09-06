@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f7fb">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Card Trade protects your social deals from start to finish. Verified identities, secure payments, and scam protection without marketplace fees.">
+  <title>Card Trade — Don’t Get Scammed &amp; Stop Paying Fees</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="icon" href="assets/favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo-link" href="#top" aria-label="Card Trade home">
+        <img src="assets/logo.png" width="560" height="490" alt="Card Trade">
+      </a>
+      <button
+        type="button"
+        class="nav-toggle"
+        id="nav-toggle"
+        aria-expanded="false"
+        aria-controls="site-nav"
+        aria-label="Open menu"
+      >
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+      </button>
+      <div class="site-header__right" id="site-nav">
+        <div class="nav-wrap">
+          <nav class="nav" aria-label="Primary">
+            <a href="#how-it-works">How it works</a>
+            <a href="#hobby">The hobby</a>
+            <a href="#trade-confidently">Trade with confidence</a>
+          </nav>
+        </div>
+        <a class="btn btn--primary btn--sm header-cta" href="#how-it-works">Download Card Trade</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="section hero" aria-labelledby="hero-heading">
+      <div class="container section__grid">
+        <div class="section__copy">
+          <h1 id="hero-heading">Don’t Get Scammed &amp; Stop Paying Fees.</h1>
+          <p class="lead">Card Trade protects your social deals from start to finish.  Never send money blindly again.</p>
+          <div class="hero-actions">
+            <a class="btn btn--primary" href="#download">Download Card Trade</a>
+            <a class="btn btn--ghost" href="#how-it-works">How it works</a>
+          </div>
+          <p class="sublead">Card deals get risky when trust isn’t clear.</p>
+          <ul class="bullet-list bullet-list--wireframe">
+            <li>You don’t always know who you’re dealing with</li>
+            <li>Vouches don’t carry from platform to platform</li>
+            <li>A post-it with a name and date can be easily faked</li>
+            <li>Peer-to-peer payments weren’t built with collector-grade protection in mind</li>
+          </ul>
+          <p class="closing-line">Collectors avoid marketplaces because of high fees, but social deals bring on risk.</p>
+        </div>
+        <figure class="section__visual">
+          <img src="graphics/section-hero.svg" width="560" height="440" alt="Illustration: verified collectors and a trading card within a security shield." decoding="async">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section compare" id="compare-options" aria-labelledby="compare-heading">
+      <div class="container">
+        <header class="compare-intro">
+          <h2 id="compare-heading" class="compare-heading">Compare your options</h2>
+          <p class="compare-lead">Same hobby, different trade-offs when you buy and sell.</p>
+        </header>
+
+        <div class="compare-grid">
+          <article class="compare-card compare-card--social">
+            <header class="compare-card__head">
+              <span class="compare-card__icon compare-card__icon--muted" aria-hidden="true"><i class="fa-solid fa-comments"></i></span>
+              <h3 class="compare-card__title">Social Media</h3>
+            </header>
+            <ul class="compare-card__list">
+              <li class="compare-card__item"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Fee-free</li>
+              <li class="compare-card__item"><i class="fa-solid fa-circle-xmark" aria-hidden="true"></i> Risky</li>
+              <li class="compare-card__item"><i class="fa-solid fa-circle-xmark" aria-hidden="true"></i> Trust issues</li>
+            </ul>
+          </article>
+
+          <article class="compare-card compare-card--marketplace">
+            <header class="compare-card__head">
+              <span class="compare-card__icon compare-card__icon--store" aria-hidden="true"><i class="fa-solid fa-store"></i></span>
+              <h3 class="compare-card__title">Marketplaces</h3>
+            </header>
+            <ul class="compare-card__list">
+              <li class="compare-card__item"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Safe</li>
+              <li class="compare-card__item"><i class="fa-solid fa-circle-xmark" aria-hidden="true"></i> Expensive</li>
+              <li class="compare-card__item"><i class="fa-solid fa-circle-xmark" aria-hidden="true"></i> Fees eat margin</li>
+            </ul>
+          </article>
+
+          <article class="compare-card compare-card--brand">
+            <header class="compare-card__head">
+              <span class="compare-card__icon compare-card__icon--brand" aria-hidden="true"><i class="fa-solid fa-shield-halved"></i></span>
+              <h3 class="compare-card__title">Card Trade</h3>
+            </header>
+            <ul class="compare-card__list">
+              <li class="compare-card__item"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Fee-free</li>
+              <li class="compare-card__item"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Safe</li>
+              <li class="compare-card__item"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> <strong>Verified IDs + optional free escrow</strong></li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="compare-download">
+          <a class="btn btn--primary btn--compare-download" href="#download">Download Card Trade</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="section how" aria-labelledby="how-heading">
+      <div class="container">
+        <header class="section-intro section-intro--center">
+          <h2 id="how-heading">HOW IT WORKS</h2>
+          <p class="how-intro">Card Trade brings trust to every deal with verified identities, payments held until completion, and built in scam protection reimbursement if something goes wrong. Keep buying and selling on social, just without the risk and without the fees.</p>
+        </header>
+
+        <ol class="how-steps">
+          <li class="how-step">
+            <div class="how-step__art" aria-hidden="true">
+              <span class="how-step__icon"><i class="fa-solid fa-download"></i></span>
+            </div>
+            <p class="how-step__kicker">Step 1</p>
+            <h3 class="how-step__title">Download Card Trade</h3>
+            <p class="how-step__text">Get the app on iOS or Android and set up your profile in minutes.</p>
+          </li>
+          <li class="how-step">
+            <div class="how-step__art" aria-hidden="true">
+              <span class="how-step__icon"><i class="fa-solid fa-id-card"></i></span>
+            </div>
+            <p class="how-step__kicker">Step 2</p>
+            <h3 class="how-step__title">Verify your identity</h3>
+            <p class="how-step__text">Government ID and phone verification ensure every account is tied to a real person.</p>
+          </li>
+          <li class="how-step">
+            <div class="how-step__art" aria-hidden="true">
+              <span class="how-step__icon"><i class="fa-solid fa-handshake"></i></span>
+            </div>
+            <p class="how-step__kicker">Step 3</p>
+            <h3 class="how-step__title">Secure the deal</h3>
+            <p class="how-step__text">Agree to the terms, log the deal, and lock in the payment with optional escrow.</p>
+          </li>
+        </ol>
+
+        <div class="two-col">
+          <article class="card-block">
+            <h3>Scam Protection Guarantee</h3>
+            <p>Run the deal through Card Trade and you’re protected.</p>
+            <p>Payments can be secured until delivery is confirmed, and if anything goes wrong, you’re covered.  Every deal includes scam protection, shipping coverage, and verified identities on both sides, so scammers can’t slip through or create cloned accounts.</p>
+          </article>
+          <article class="card-block">
+            <h3>Equal Protection for Buyers &amp; Sellers</h3>
+            <ul class="feature-list feature-list--wireframe">
+              <li>
+                <span class="feature-list__bullet" aria-hidden="true">•</span>
+                <span class="feature-list__body">
+                  <strong>Trade with confidence</strong>
+                  <span class="feature-list__sub">Your deal is protected from start to finish</span>
+                </span>
+              </li>
+              <li>
+                <span class="feature-list__bullet" aria-hidden="true">•</span>
+                <span class="feature-list__body">
+                  <strong>Know who you’re dealing with</strong>
+                  <span class="feature-list__sub">Verified users with real profiles &amp; ratings</span>
+                </span>
+              </li>
+              <li>
+                <span class="feature-list__bullet" aria-hidden="true">•</span>
+                <span class="feature-list__body">
+                  <strong>Skip the fees</strong>
+                  <span class="feature-list__sub">Stop losing money to marketplace and Paypal fees</span>
+                </span>
+              </li>
+              <li>
+                <span class="feature-list__bullet" aria-hidden="true">•</span>
+                <span class="feature-list__body">
+                  <strong>Your deal is protected</strong>
+                  <span class="feature-list__sub">Scam protection and shipping insurance included on every deal</span>
+                </span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+      
+      <div class="how-download">
+        <a class="btn btn--primary btn--compare-download" href="#download">Download Card Trade</a>
+      </div>
+    </section>
+
+    <section id="hobby" class="section hobby" aria-labelledby="hobby-heading">
+      <div class="container">
+        <header class="hobby-intro">
+          <h2 id="hobby-heading">The Hobby Loves Us</h2>
+          <p class="hobby-kicker">Keep finding deals where you already do.</p>
+          <p class="hobby-copy">Keep finding deals in Facebook groups, Instagram, and Discord. Card Trade isn’t a marketplace, it’s how you stay protected from scams.  Verify who you’re dealing with, secure the payment, and protect every deal without paying fees.</p>
+        </header>
+
+        <div class="testimonial-grid">
+          <article class="testimonial-card">
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars"><span aria-hidden="true">★★★★★</span></div>
+            <blockquote class="testimonial-card__quote"><p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”</p></blockquote>
+            <footer class="testimonial-card__footer">
+              <div class="testimonial-card__avatar" aria-hidden="true">
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <div class="testimonial-card__who">
+                <cite class="testimonial-card__name">Name Surname</cite>
+                <p class="testimonial-card__meta">Position, Company name</p>
+              </div>
+            </footer>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars"><span aria-hidden="true">★★★★★</span></div>
+            <blockquote class="testimonial-card__quote"><p>“Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute.”</p></blockquote>
+            <footer class="testimonial-card__footer">
+              <div class="testimonial-card__avatar" aria-hidden="true">
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <div class="testimonial-card__who">
+                <cite class="testimonial-card__name">Name Surname</cite>
+                <p class="testimonial-card__meta">Position, Company name</p>
+              </div>
+            </footer>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars"><span aria-hidden="true">★★★★★</span></div>
+            <blockquote class="testimonial-card__quote"><p>“Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint.”</p></blockquote>
+            <footer class="testimonial-card__footer">
+              <div class="testimonial-card__avatar" aria-hidden="true">
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <div class="testimonial-card__who">
+                <cite class="testimonial-card__name">Name Surname</cite>
+                <p class="testimonial-card__meta">Position, Company name</p>
+              </div>
+            </footer>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars"><span aria-hidden="true">★★★★★</span></div>
+            <blockquote class="testimonial-card__quote"><p>“Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum sed ut.”</p></blockquote>
+            <footer class="testimonial-card__footer">
+              <div class="testimonial-card__avatar" aria-hidden="true">
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <div class="testimonial-card__who">
+                <cite class="testimonial-card__name">Name Surname</cite>
+                <p class="testimonial-card__meta">Position, Company name</p>
+              </div>
+            </footer>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars"><span aria-hidden="true">★★★★★</span></div>
+            <blockquote class="testimonial-card__quote"><p>“Curabitur pretium tincidunt lacus nulla gravida orci a odio aliquam augue suscipit lobortis erat velit nec nisl aenean.”</p></blockquote>
+            <footer class="testimonial-card__footer">
+              <div class="testimonial-card__avatar" aria-hidden="true">
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <div class="testimonial-card__who">
+                <cite class="testimonial-card__name">Name Surname</cite>
+                <p class="testimonial-card__meta">Position, Company name</p>
+              </div>
+            </footer>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars"><span aria-hidden="true">★★★★★</span></div>
+            <blockquote class="testimonial-card__quote"><p>“Integer vitae libero ac risus egestas placerat vestibulum commodo volutpat convallis laoreet phasellus fermentum in dolor.”</p></blockquote>
+            <footer class="testimonial-card__footer">
+              <div class="testimonial-card__avatar" aria-hidden="true">
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <div class="testimonial-card__who">
+                <cite class="testimonial-card__name">Name Surname</cite>
+                <p class="testimonial-card__meta">Position, Company name</p>
+              </div>
+            </footer>
+          </article>
+        </div>
+
+        <div class="hobby-download" id="download">
+          <a class="btn btn--primary btn--download" href="#">Download Card Trade</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="trade-confidently" class="section cta" aria-labelledby="cta-heading">
+      <div class="container section__grid">
+        <div class="cta-copy-wrap">
+          <h2 id="cta-heading">Trade with confidence. Not risk.</h2>
+          <p class="cta-copy">Keep making deals where you already do, just with verified users, secure payments, and built in protection.</p>
+          <a class="btn btn--primary btn--download" href="#">Download Card Trade</a>
+        </div>
+        <figure class="section__visual">
+          <img src="graphics/section-cta.svg" width="520" height="240" alt="Illustration: protection shield with holographic beam accent." decoding="async">
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="footer-logo" href="#top">Card Trade</a>
+          <p class="footer-tagline">Social deals with verified identities, held payments, and scam protection—without marketplace fees.</p>
+        </div>
+        <div class="footer-col">
+          <h2 class="footer-heading">Product</h2>
+          <ul class="footer-links">
+            <li><a href="#how-it-works">How it works</a></li>
+            <li><a href="#hobby">Collectors &amp; reviews</a></li>
+            <li><a href="#trade-confidently">Protection</a></li>
+            <li><a href="#download">Download app</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2 class="footer-heading">Company</h2>
+          <ul class="footer-links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="mailto:hello@cardtrade.com">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2 class="footer-heading">Legal</h2>
+          <ul class="footer-links">
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Terms of use</a></li>
+            <li><a href="#">Cookie settings</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Card Trade. All rights reserved.</p>
+        <ul class="footer-social" aria-label="Social media">
+          <li>
+            <a class="footer-social-link" href="#" rel="noopener noreferrer" aria-label="Instagram">
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a class="footer-social-link" href="#" rel="noopener noreferrer" aria-label="X (Twitter)">
+              <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a class="footer-social-link" href="#" rel="noopener noreferrer" aria-label="Discord">
+              <i class="fa-brands fa-discord" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script>
+    (function () {
+      var toggle = document.getElementById('nav-toggle');
+      var panel = document.getElementById('site-nav');
+      if (!toggle || !panel) return;
+
+      var setOpen = function (open) {
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+        document.body.classList.toggle('nav-open', open);
+      };
+
+      toggle.addEventListener('click', function () {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
+      });
+
+      panel.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          setOpen(false);
+        });
+      });
+
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') setOpen(false);
+      });
+    })();
+  </script>
+</body>
+</html>
