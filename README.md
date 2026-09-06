@@ -30,7 +30,21 @@ Iconos: [Lucide](https://lucide.dev) vía `lucide-react`, mapeados en [`src/util
 
 ## Despliegue
 
-Proyecto estático (Vite). Sube la carpeta `dist/` a Vercel, Netlify o cualquier hosting estático.
+Hay que servir la carpeta `dist/` tras `npm run build`. No subas el repo fuente como sitio estático: el `index.html` de desarrollo apunta a `/src/principal.tsx` y falla en producción.
+
+### GitHub Pages (este repo)
+
+1. Settings → Pages → Source: **GitHub Actions**
+2. Cada push a `master`/`main` construye y publica en `https://albergm98.github.io/Portfolio/`
+3. El workflow fija `VITE_BASE=/Portfolio/`
+
+### Otro hosting (raíz de dominio)
+
+```powershell
+npm run build
+```
+
+Sube solo `dist/` (Vercel, Netlify, Hostinger, etc.). `VITE_BASE` por defecto es `/`.
 
 ## Decisiones
 

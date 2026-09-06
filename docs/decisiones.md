@@ -4,6 +4,11 @@
 
 Una sola página con dos modos de visita (trabajador / freelance): CV orientado a empleo o escaparate de encargos, según lo que elija quien entra. El enlace «CV» descarga `/assets/img/pdf/CV.pdf`.
 
+## Despliegue
+
+- Servir siempre `dist/` (build Vite), nunca el árbol fuente
+- GitHub Pages: Actions con `VITE_BASE=/Portfolio/` → `https://albergm98.github.io/Portfolio/`
+
 ## Stack
 
 - React 19 + TypeScript + Vite
