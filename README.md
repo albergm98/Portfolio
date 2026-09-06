@@ -38,17 +38,27 @@ Hay que servir la carpeta `dist/` tras `npm run build`. No subas el repo fuente 
 2. Cada push a `master`/`main` construye y publica en `https://albergm98.github.io/Portfolio/`
 3. El workflow fija `VITE_BASE=/Portfolio/`
 
-### albertogallardo.cloud (Docker / Dokploy / nginx)
+### albertogallardo.cloud (Dokploy)
 
-El repo incluye `Dockerfile`: build de Vite + nginx sirviendo solo `dist/`.
+**Importante:** si en los logs aparece `GET /src/principal.tsx`, el Build Type está mal.
+`Static` monta el repo entero en nginx y rompe Vite. El Dockerfile del repo usa `nginx:1.27`; si ves `nginx/1.31.x`, no está usando el Dockerfile.
 
-En Dokploy (o similar):
+Elige **una** de estas dos opciones en la app de Dokploy (General → Build Type) y haz **Redeploy**:
 
-1. Build type: **Dockerfile** (no “static” ni copiar el repo a nginx a pelo)
-2. Context: raíz del repo
-3. Redeploy tras el push
+#### Opción A — Dockerfile (recomendada)
 
-Si el contenedor sigue pidiendo `/src/principal.tsx`, está montando el código fuente: hay que usar esta imagen, no `nginx` + carpeta del repo.
+1. Build Type: `Dockerfile`
+2. Dockerfile Path: `Dockerfile`
+3. Docker Context Path: `.`
+4. Save → Redeploy
+
+#### Opción B — Nixpacks + carpeta `dist`
+
+1. Build Type: `Nixpacks`
+2. Publish Directory: `dist`
+3. Save → Redeploy
+
+Comprobación: tras el deploy, los logs deben pedir `/assets/index-….js`, no `/src/principal.tsx`.
 
 ## Decisiones
 
