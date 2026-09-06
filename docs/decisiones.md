@@ -8,6 +8,7 @@ Una sola página con dos modos de visita (trabajador / freelance): CV orientado 
 
 - Servir siempre `dist/` (build Vite), nunca el árbol fuente
 - GitHub Pages: Actions con `VITE_BASE=/Portfolio/` → `https://albergm98.github.io/Portfolio/`
+- `albertogallardo.cloud`: `Dockerfile` multi-stage (Vite + nginx de `dist/`)
 
 ## Stack
 

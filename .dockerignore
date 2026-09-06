@@ -1,0 +1,11 @@
+node_modules
+dist
+dist-ssr
+.git
+.cursor
+.github
+*.local
+.env
+.env.*
+README.md
+docs

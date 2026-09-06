@@ -38,13 +38,17 @@ Hay que servir la carpeta `dist/` tras `npm run build`. No subas el repo fuente 
 2. Cada push a `master`/`main` construye y publica en `https://albergm98.github.io/Portfolio/`
 3. El workflow fija `VITE_BASE=/Portfolio/`
 
-### Otro hosting (raíz de dominio)
+### albertogallardo.cloud (Docker / Dokploy / nginx)
 
-```powershell
-npm run build
-```
+El repo incluye `Dockerfile`: build de Vite + nginx sirviendo solo `dist/`.
 
-Sube solo `dist/` (Vercel, Netlify, Hostinger, etc.). `VITE_BASE` por defecto es `/`.
+En Dokploy (o similar):
+
+1. Build type: **Dockerfile** (no “static” ni copiar el repo a nginx a pelo)
+2. Context: raíz del repo
+3. Redeploy tras el push
+
+Si el contenedor sigue pidiendo `/src/principal.tsx`, está montando el código fuente: hay que usar esta imagen, no `nginx` + carpeta del repo.
 
 ## Decisiones
 
